@@ -1,16 +1,16 @@
 const products = [
-  { id: 1, name: "T-shirt graphique Yalys", category: "Vêtements", price: 24.99, cost: 5.97, icon: "👕", tag: "Tendance", sizes: "S · M · L · XL", description: "T-shirt graphique au style streetwear, facile à porter avec un jean ou un pantalon cargo." },
-  { id: 2, name: "Hoodie oversize Yalys", category: "Vêtements", price: 44.99, cost: 13.18, icon: "🧥", tag: "Best-seller", sizes: "S · M · L · XL", description: "Hoodie oversize confortable avec une coupe moderne pour un look décontracté." },
-  { id: 3, name: "Pantalon cargo streetwear", category: "Vêtements", price: 39.99, cost: 7.79, icon: "👖", tag: "Streetwear", sizes: "S · M · L · XL", description: "Pantalon cargo avec poches pratiques et coupe streetwear polyvalente." },
-  { id: 4, name: "Chemise coton-lin", category: "Vêtements", price: 34.99, cost: 11.28, icon: "👔", tag: "Nouveau", sizes: "S · M · L · XL", description: "Chemise légère au style propre et moderne, adaptée aux tenues décontractées ou habillées." },
-  { id: 5, name: "Casquette streetwear", category: "Accessoires", price: 19.99, cost: 2.99, icon: "🧢", tag: "Tendance", sizes: "Taille réglable", description: "Casquette streetwear réglable pour compléter facilement une tenue Yalys." },
-  { id: 6, name: "Ceinture boucle automatique", category: "Accessoires", price: 24.99, cost: 1.94, icon: "🪢", tag: "Petit prix", sizes: "Taille réglable", description: "Ceinture moderne à boucle automatique, pensée pour être simple à porter au quotidien." },
-  { id: 7, name: "Écharpe légère Yalys", category: "Accessoires", price: 19.99, cost: 2.28, icon: "🧣", tag: "Nouveau", sizes: "Taille unique", description: "Écharpe légère et facile à associer avec différentes tenues." },
-  { id: 8, name: "Bracelet perles élégant", category: "Accessoires", price: 14.99, cost: 0.80, icon: "📿", tag: "Tendance", sizes: "Taille ajustable", description: "Bracelet à perles au style discret pour apporter une petite touche à une tenue." },
-  { id: 9, name: "Boucles d'oreilles élégantes", category: "Accessoires", price: 16.99, cost: 0.78, icon: "✨", tag: "Nouveau", sizes: "Taille unique", description: "Boucles d'oreilles au style élégant pour compléter une tenue de tous les jours." },
-  { id: 10, name: "Chaussettes sport", category: "Accessoires", price: 12.99, cost: 1.05, icon: "🧦", tag: "Petit prix", sizes: "36–44", description: "Chaussettes sport confortables pour accompagner les tenues du quotidien." },
-  { id: 11, name: "Lunettes tendance", category: "Accessoires", price: 17.99, cost: 3.50, icon: "🕶️", tag: "Tendance", sizes: "Taille unique", description: "Lunettes tendance à porter comme accessoire de style." },
-  { id: 12, name: "Sac tendance", category: "Accessoires", price: 29.99, cost: 8.00, icon: "👜", tag: "Best-seller", sizes: "Taille unique", description: "Sac tendance pratique pour compléter une tenue et transporter les essentiels." }
+  { id: 1, name: "T-shirt graphique Yalys", category: "Vêtements", price: 24.99, cost: 5.97, icon: "👕", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85", tag: "Tendance", sizes: "S · M · L · XL", description: "T-shirt graphique au style streetwear, facile à porter avec un jean ou un pantalon cargo." },
+  { id: 2, name: "Hoodie oversize Yalys", category: "Vêtements", price: 44.99, cost: 13.18, icon: "🧥", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85", tag: "Best-seller", sizes: "S · M · L · XL", description: "Hoodie oversize confortable avec une coupe moderne pour un look décontracté." },
+  { id: 3, name: "Pantalon cargo streetwear", category: "Vêtements", price: 39.99, cost: 7.79, icon: "👖", image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=85", tag: "Streetwear", sizes: "S · M · L · XL", description: "Pantalon cargo avec poches pratiques et coupe streetwear polyvalente." },
+  { id: 4, name: "Chemise coton-lin", category: "Vêtements", price: 34.99, cost: 11.28, icon: "👔", image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85", tag: "Nouveau", sizes: "S · M · L · XL", description: "Chemise légère au style propre et moderne, adaptée aux tenues décontractées ou habillées." },
+  { id: 5, name: "Casquette streetwear", category: "Accessoires", price: 19.99, cost: 2.99, icon: "🧢", image: "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85", tag: "Tendance", sizes: "Taille réglable", description: "Casquette streetwear réglable pour compléter facilement une tenue Yalys." },
+  { id: 6, name: "Ceinture boucle automatique", category: "Accessoires", price: 24.99, cost: 1.94, icon: "🪢", image: "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=900&q=85", tag: "Petit prix", sizes: "Taille réglable", description: "Ceinture moderne à boucle automatique, pensée pour être simple à porter au quotidien." },
+  { id: 7, name: "Écharpe légère Yalys", category: "Accessoires", price: 19.99, cost: 2.28, icon: "🧣", image: "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=900&q=85", tag: "Nouveau", sizes: "Taille unique", description: "Écharpe légère et facile à associer avec différentes tenues." },
+  { id: 8, name: "Bracelet perles élégant", category: "Accessoires", price: 14.99, cost: 0.80, icon: "📿", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85", tag: "Tendance", sizes: "Taille ajustable", description: "Bracelet à perles au style discret pour apporter une petite touche à une tenue." },
+  { id: 9, name: "Boucles d'oreilles élégantes", category: "Accessoires", price: 16.99, cost: 0.78, icon: "✨", image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85", tag: "Nouveau", sizes: "Taille unique", description: "Boucles d'oreilles au style élégant pour compléter une tenue de tous les jours." },
+  { id: 10, name: "Chaussettes sport", category: "Accessoires", price: 12.99, cost: 1.05, icon: "🧦", image: "https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&w=900&q=85", tag: "Petit prix", sizes: "36–44", description: "Chaussettes sport confortables pour accompagner les tenues du quotidien." },
+  { id: 11, name: "Lunettes tendance", category: "Accessoires", price: 17.99, cost: 3.50, icon: "🕶️", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85", tag: "Tendance", sizes: "Taille unique", description: "Lunettes tendance à porter comme accessoire de style." },
+  { id: 12, name: "Sac tendance", category: "Accessoires", price: 29.99, cost: 8.00, icon: "👜", image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85", tag: "Best-seller", sizes: "Taille unique", description: "Sac tendance pratique pour compléter une tenue et transporter les essentiels." }
 ];
 
 let cart = JSON.parse(localStorage.getItem("yalysCart") || "[]");
@@ -41,7 +41,11 @@ function renderProducts() {
   document.getElementById("noResults").hidden = list.length !== 0;
   productsEl.innerHTML = list.map(p => `
     <article class="product">
-      <button class="product-image" data-details="${p.id}" aria-label="Voir ${p.name}"><span>${p.icon}</span><small>Voir le produit</small></button>
+      <button class="product-image" data-details="${p.id}" aria-label="Voir ${p.name}">
+        <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+        <span class="image-fallback" hidden>${p.icon}</span>
+        <small>Voir le produit</small>
+      </button>
       <div class="product-info"><p class="product-category">${p.category} · ${p.tag}</p><h3>${p.name}</h3><div class="product-bottom"><span class="price">${euro(p.price)}</span><div class="product-actions"><button class="details" data-details="${p.id}">Détails</button><button class="add" data-id="${p.id}">Ajouter</button></div></div></div>
     </article>`).join("");
   document.querySelectorAll(".add").forEach(button => button.addEventListener("click", () => addToCart(Number(button.dataset.id))));
@@ -72,7 +76,7 @@ function renderCart() {
   document.getElementById("cartCount").textContent = count;
   document.getElementById("cartTotal").textContent = euro(total);
   document.getElementById("cartItems").innerHTML = cart.length ? cart.map(item => `
-    <div class="cart-item"><div class="cart-thumb">${item.icon}</div><div><h4>${item.name}</h4><small>${euro(item.price)} · quantité ${item.quantity}</small><div class="qty"><button data-minus="${item.id}" aria-label="Diminuer">−</button><strong>${item.quantity}</strong><button data-plus="${item.id}" aria-label="Augmenter">+</button></div></div><button class="remove" data-remove="${item.id}">Suppr.</button></div>`).join("") : '<p class="empty">Ton panier est vide.</p>';
+    <div class="cart-item"><img class="cart-thumb" src="${item.image}" alt="" loading="lazy"><div><h4>${item.name}</h4><small>${euro(item.price)} · quantité ${item.quantity}</small><div class="qty"><button data-minus="${item.id}" aria-label="Diminuer">−</button><strong>${item.quantity}</strong><button data-plus="${item.id}" aria-label="Augmenter">+</button></div></div><button class="remove" data-remove="${item.id}">Suppr.</button></div>`).join("") : '<p class="empty">Ton panier est vide.</p>';
   document.querySelectorAll("[data-minus]").forEach(b => b.addEventListener("click", () => changeQuantity(Number(b.dataset.minus), -1)));
   document.querySelectorAll("[data-plus]").forEach(b => b.addEventListener("click", () => changeQuantity(Number(b.dataset.plus), 1)));
   document.querySelectorAll("[data-remove]").forEach(b => b.addEventListener("click", () => removeFromCart(Number(b.dataset.remove))));
@@ -84,7 +88,7 @@ function closeCart() { cartEl.classList.remove("open"); overlay.classList.remove
 function openProduct(id) {
   const p = products.find(item => item.id === id); if (!p) return;
   selectedProductId = id;
-  document.getElementById("modalIcon").textContent = p.icon;
+  document.getElementById("modalIcon").innerHTML = `<img class="modal-product-image" src="${p.image}" alt="${p.name}"><span class="image-fallback" hidden>${p.icon}</span>`;
   document.getElementById("modalCategory").textContent = `${p.category} · ${p.tag}`;
   document.getElementById("modalName").textContent = p.name;
   document.getElementById("modalDescription").textContent = p.description;
