@@ -69,7 +69,7 @@
     <div class="cart-footer">
       <div class="total"><span>Total</span><strong id="cartTotal">0,00 €</strong></div>
       <button class="checkout" id="checkoutButton">Passer commande</button>
-      <p class="checkout-note">Le paiement en ligne sera activé avant l'ouverture des ventes.</p>
+      <p class="checkout-note">Le paiement en ligne sera activé avec Stripe après configuration du serveur.</p>
     </div>
   </aside>
 
@@ -91,8 +91,8 @@
         <label>Adresse de livraison<textarea name="address" required autocomplete="street-address" rows="3"></textarea></label>
         <div class="form-grid"><label>Code postal<input name="postalCode" required inputmode="numeric" autocomplete="postal-code"></label><label>Ville<input name="city" required autocomplete="address-level2"></label></div>
         <div class="order-preview" id="orderPreview"></div>
-        <button class="checkout" type="submit">Préparer ma commande</button>
-        <p class="form-note">Cette étape prépare le récapitulatif. Aucun paiement n'est encaissé tant qu'un prestataire de paiement n'est pas connecté.</p>
+        <button class="checkout" type="submit">Payer avec Stripe</button>
+        <p class="form-note">Tu seras redirigé vers Stripe pour effectuer le paiement.</p>
       </form>
     </div>
   </div>
@@ -103,5 +103,6 @@
     <nav class="footer-links" aria-label="Informations"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="cgv.html">CGV</a><a href="livraison-retours.html">Livraison & retours</a></nav>
   </footer>
   <script src="script.js"></script>
+  <script src="stripe-checkout.js"></script>
 </body>
 </html>
