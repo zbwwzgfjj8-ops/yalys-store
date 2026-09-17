@@ -1,10 +1,16 @@
 const products = [
-  { id: 1, name: "T-shirt Yalys Essential", category: "Vêtements", price: 24.99, icon: "👕" },
-  { id: 2, name: "Hoodie Yalys", category: "Vêtements", price: 39.99, icon: "🧥" },
-  { id: 3, name: "Casquette Yalys", category: "Accessoires", price: 19.99, icon: "🧢" },
-  { id: 4, name: "Sac Yalys", category: "Accessoires", price: 29.99, icon: "👜" },
-  { id: 5, name: "Lunettes tendance", category: "Accessoires", price: 17.99, icon: "🕶️" },
-  { id: 6, name: "Pantalon cargo", category: "Vêtements", price: 44.99, icon: "👖" }
+  { id: 1, name: "T-shirt graphique Yalys", category: "Vêtements", price: 24.99, cost: 5.97, icon: "👕", tag: "Tendance" },
+  { id: 2, name: "Hoodie oversize Yalys", category: "Vêtements", price: 44.99, cost: 13.18, icon: "🧥", tag: "Best-seller" },
+  { id: 3, name: "Pantalon cargo streetwear", category: "Vêtements", price: 39.99, cost: 7.79, icon: "👖", tag: "Streetwear" },
+  { id: 4, name: "Chemise coton-lin", category: "Vêtements", price: 34.99, cost: 11.28, icon: "👔", tag: "Nouveau" },
+  { id: 5, name: "Casquette streetwear", category: "Accessoires", price: 19.99, cost: 2.99, icon: "🧢", tag: "Tendance" },
+  { id: 6, name: "Ceinture boucle automatique", category: "Accessoires", price: 24.99, cost: 1.94, icon: "🪢", tag: "Petit prix" },
+  { id: 7, name: "Écharpe légère Yalys", category: "Accessoires", price: 19.99, cost: 2.28, icon: "🧣", tag: "Nouveau" },
+  { id: 8, name: "Bracelet perles élégant", category: "Accessoires", price: 14.99, cost: 0.80, icon: "📿", tag: "Tendance" },
+  { id: 9, name: "Boucles d'oreilles élégantes", category: "Accessoires", price: 16.99, cost: 0.78, icon: "✨", tag: "Nouveau" },
+  { id: 10, name: "Chaussettes sport", category: "Accessoires", price: 12.99, cost: 1.05, icon: "🧦", tag: "Petit prix" },
+  { id: 11, name: "Lunettes tendance", category: "Accessoires", price: 17.99, cost: 3.50, icon: "🕶️", tag: "Tendance" },
+  { id: 12, name: "Sac tendance", category: "Accessoires", price: 29.99, cost: 8.00, icon: "👜", tag: "Best-seller" }
 ];
 
 let cart = JSON.parse(localStorage.getItem("yalysCart") || "[]");
@@ -20,7 +26,7 @@ function renderProducts(category = "Tous") {
     <article class="product">
       <div class="product-image" aria-hidden="true">${p.icon}</div>
       <div class="product-info">
-        <p class="product-category">${p.category}</p>
+        <p class="product-category">${p.category} · ${p.tag}</p>
         <h3>${p.name}</h3>
         <div class="product-bottom">
           <span class="price">${euro(p.price)}</span>
@@ -90,7 +96,7 @@ document.querySelectorAll(".filter").forEach(button => {
 
 document.getElementById("checkoutButton").addEventListener("click", () => {
   if (!cart.length) return alert("Ton panier est vide.");
-  alert("Le paiement n'est pas encore connecté. La prochaine étape sera d'ajouter une solution de paiement sécurisée.");
+  alert("Le paiement sécurisé sera connecté à l'étape suivante.");
 });
 
 renderProducts();
