@@ -13,60 +13,18 @@
 <body>
   <header class="header">
     <a class="logo" href="#accueil">Yalys<span>.</span></a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#accueil">Accueil</a>
-      <a href="#boutique">Boutique</a>
-      <a href="#apropos">À propos</a>
-    </nav>
+    <nav class="nav" aria-label="Navigation principale"><a href="#accueil">Accueil</a><a href="#boutique">Boutique</a><a href="#apropos">À propos</a></nav>
     <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">Panier <span id="cartCount">0</span></button>
   </header>
-
   <main>
-    <section class="hero" id="accueil">
-      <div class="hero-content">
-        <p class="eyebrow">YALYS STORE · MODE & ACCESSOIRES</p>
-        <h1>Si tu veux être classe,<br><span>viens chez Yalys.</span></h1>
-        <p class="hero-text">Des pièces tendance, faciles à porter et pensées pour donner du style à tes tenues.</p>
-        <a class="primary-button" href="#boutique">Découvrir la boutique</a>
-      </div>
-      <div class="hero-badge"><strong>12</strong><span>produits<br>sélectionnés</span></div>
-    </section>
-
-    <section class="shop" id="boutique">
-      <div class="section-heading">
-        <div><p class="eyebrow">NOTRE SÉLECTION</p><h2>Les produits Yalys</h2></div>
-        <div class="filters" role="group" aria-label="Filtrer les produits">
-          <button class="filter active" data-category="Tous">Tous</button>
-          <button class="filter" data-category="Vêtements">Vêtements</button>
-          <button class="filter" data-category="Accessoires">Accessoires</button>
-        </div>
-      </div>
-      <div class="products" id="products"></div>
-    </section>
-
-    <section class="trust">
-      <div><strong>✨ Style tendance</strong><span>Des produits sélectionnés pour Yalys.</span></div>
-      <div><strong>📦 Livraison</strong><span>Les informations seront affichées avant la commande.</span></div>
-      <div><strong>🔒 Paiement sécurisé</strong><span>Le paiement sera ajouté avec un prestataire adapté.</span></div>
-    </section>
-
-    <section class="about" id="apropos">
-      <div><p class="eyebrow">À PROPOS</p><h2>Un style simple, moderne et accessible.</h2></div>
-      <p>Yalys Store propose des vêtements et accessoires tendance. Nous construisons une boutique claire, mobile et facile à utiliser, avec des produits sélectionnés pour notre communauté.</p>
-    </section>
+    <section class="hero" id="accueil"><div class="hero-content"><p class="eyebrow">YALYS STORE · MODE & ACCESSOIRES</p><h1>Si tu veux être classe,<br><span>viens chez Yalys.</span></h1><p class="hero-text">Des pièces tendance, faciles à porter et pensées pour donner du style à tes tenues.</p><a class="primary-button" href="#boutique">Découvrir la boutique</a></div><div class="hero-badge"><strong>12</strong><span>produits<br>sélectionnés</span></div></section>
+    <section class="shop" id="boutique"><div class="section-heading"><div><p class="eyebrow">NOTRE SÉLECTION</p><h2>Les produits Yalys</h2></div><div class="filters" role="group" aria-label="Filtrer les produits"><button class="filter active" data-category="Tous">Tous</button><button class="filter" data-category="Vêtements">Vêtements</button><button class="filter" data-category="Accessoires">Accessoires</button></div></div><div class="products" id="products"></div></section>
+    <section class="trust"><div><strong>✨ Style tendance</strong><span>Des produits sélectionnés pour Yalys.</span></div><div><strong>📦 Livraison</strong><span>Les informations seront affichées avant la commande.</span></div><div><strong>🔒 Paiement sécurisé</strong><span>Le paiement sera ajouté avec un prestataire adapté.</span></div></section>
+    <section class="about" id="apropos"><div><p class="eyebrow">À PROPOS</p><h2>Un style simple, moderne et accessible.</h2></div><p>Yalys Store propose des vêtements et accessoires tendance. Nous construisons une boutique claire, mobile et facile à utiliser, avec des produits sélectionnés pour notre communauté.</p></section>
   </main>
-
   <div class="overlay" id="overlay"></div>
-  <aside class="cart" id="cart" aria-label="Panier">
-    <div class="cart-header"><h2>Mon panier</h2><button id="closeCart" aria-label="Fermer le panier">×</button></div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-footer">
-      <div class="total"><span>Total</span><strong id="cartTotal">0,00 €</strong></div>
-      <button class="checkout" id="checkoutButton">Passer commande</button>
-      <p class="checkout-note">Paiement sécurisé à connecter avant l'ouverture des ventes.</p>
-    </div>
-  </aside>
-
+  <aside class="cart" id="cart" aria-label="Panier"><div class="cart-header"><h2>Mon panier</h2><button id="closeCart" aria-label="Fermer le panier">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="total"><span>Total</span><strong id="cartTotal">0,00 €</strong></div><button class="checkout" id="checkoutButton">Passer commande</button><p class="checkout-note">Paiement sécurisé à connecter avant l'ouverture des ventes.</p></div></aside>
+  <div class="product-modal" id="productModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="closeModal" aria-label="Fermer">×</button><div class="modal-icon" id="modalIcon"></div><div class="modal-content"><p class="product-category" id="modalCategory"></p><h2 id="modalName"></h2><p id="modalDescription"></p><div class="modal-meta"><span id="modalPrice"></span><span id="modalSizes"></span></div><button class="checkout" id="modalAdd">Ajouter au panier</button></div></div></div>
   <footer class="footer"><strong>Yalys Store</strong><span>© 2026 Yalys Store — Vêtements & accessoires</span></footer>
   <script src="script.js"></script>
 </body>
