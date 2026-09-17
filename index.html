@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Yalys Store - vêtements et accessoires tendance.">
   <title>Yalys Store — Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,27 +18,23 @@
       <a href="#boutique">Boutique</a>
       <a href="#apropos">À propos</a>
     </nav>
-    <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">
-      Panier <span id="cartCount">0</span>
-    </button>
+    <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">Panier <span id="cartCount">0</span></button>
   </header>
 
   <main>
     <section class="hero" id="accueil">
       <div class="hero-content">
-        <p class="eyebrow">YALYS STORE</p>
+        <p class="eyebrow">YALYS STORE · MODE & ACCESSOIRES</p>
         <h1>Si tu veux être classe,<br><span>viens chez Yalys.</span></h1>
-        <p class="hero-text">Découvre notre sélection de vêtements et accessoires pour créer ton propre style.</p>
+        <p class="hero-text">Des pièces tendance, faciles à porter et pensées pour donner du style à tes tenues.</p>
         <a class="primary-button" href="#boutique">Découvrir la boutique</a>
       </div>
+      <div class="hero-badge"><strong>12</strong><span>produits<br>sélectionnés</span></div>
     </section>
 
     <section class="shop" id="boutique">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow">NOTRE SÉLECTION</p>
-          <h2>Les produits Yalys</h2>
-        </div>
+        <div><p class="eyebrow">NOTRE SÉLECTION</p><h2>Les produits Yalys</h2></div>
         <div class="filters" role="group" aria-label="Filtrer les produits">
           <button class="filter active" data-category="Tous">Tous</button>
           <button class="filter" data-category="Vêtements">Vêtements</button>
@@ -45,34 +44,30 @@
       <div class="products" id="products"></div>
     </section>
 
+    <section class="trust">
+      <div><strong>✨ Style tendance</strong><span>Des produits sélectionnés pour Yalys.</span></div>
+      <div><strong>📦 Livraison</strong><span>Les informations seront affichées avant la commande.</span></div>
+      <div><strong>🔒 Paiement sécurisé</strong><span>Le paiement sera ajouté avec un prestataire adapté.</span></div>
+    </section>
+
     <section class="about" id="apropos">
-      <div>
-        <p class="eyebrow">À PROPOS</p>
-        <h2>Un style simple, moderne et accessible.</h2>
-      </div>
-      <p>Yalys Store propose des vêtements et accessoires tendance. Le site est actuellement en version boutique et peut être complété avec les vrais produits, les frais de livraison et le paiement.</p>
+      <div><p class="eyebrow">À PROPOS</p><h2>Un style simple, moderne et accessible.</h2></div>
+      <p>Yalys Store propose des vêtements et accessoires tendance. Nous construisons une boutique claire, mobile et facile à utiliser, avec des produits sélectionnés pour notre communauté.</p>
     </section>
   </main>
 
   <div class="overlay" id="overlay"></div>
   <aside class="cart" id="cart" aria-label="Panier">
-    <div class="cart-header">
-      <h2>Mon panier</h2>
-      <button id="closeCart" aria-label="Fermer le panier">×</button>
-    </div>
+    <div class="cart-header"><h2>Mon panier</h2><button id="closeCart" aria-label="Fermer le panier">×</button></div>
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-footer">
       <div class="total"><span>Total</span><strong id="cartTotal">0,00 €</strong></div>
       <button class="checkout" id="checkoutButton">Passer commande</button>
-      <p class="checkout-note">Le paiement sera connecté dans la prochaine étape.</p>
+      <p class="checkout-note">Paiement sécurisé à connecter avant l'ouverture des ventes.</p>
     </div>
   </aside>
 
-  <footer class="footer">
-    <strong>Yalys Store</strong>
-    <span>© 2026 Yalys Store — Vêtements & accessoires</span>
-  </footer>
-
+  <footer class="footer"><strong>Yalys Store</strong><span>© 2026 Yalys Store — Vêtements & accessoires</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
